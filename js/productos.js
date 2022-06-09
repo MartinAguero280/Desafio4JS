@@ -1,5 +1,4 @@
 
-
 //Objetos
 class Producto {
     constructor(nombre, precio, categoria, imagen) {

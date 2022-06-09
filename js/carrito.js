@@ -44,12 +44,3 @@ function agregarFilaCarrito(productoCarritoImagen, productoCarritoNombre, produc
         document.getElementById('container__carritoTemporal').appendChild(filaCarrito);
 
 }
-
-
-/*
-const botonAgregarAlCarrito = document.querySelectorAll('.boton__agregarAlCarrito');
-botonAgregarAlCarrito.forEach((agregarAlCarrito) => {
-    agregarAlCarrito.addEventListener('click', agregarFilaCarrito)
-})
-*/
-
