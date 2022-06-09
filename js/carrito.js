@@ -24,7 +24,7 @@ function agregarFilaCarrito(productoCarritoImagen, productoCarritoNombre, produc
         `
         <div class="fila__productoCarrito" id="fila__productoCarrito">
 
-            <img class="imagen__productoCarrito" ${productoCarritoImagen} >
+            <img class="imagen__productoCarrito" src="${productoCarritoImagen}">
 
             <div class="container__parrafosFilaProductoCarrito">
                 <p>Nombre: ${productoCarritoNombre} </p>
