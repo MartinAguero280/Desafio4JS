@@ -68,13 +68,47 @@
                 <div class="row">
                             
                     <div class="parrafos__productos col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                        <form action="">
-                            <label for="nombre">Ingrese su nombre</label><br>
-                            <input type="text" name="nombre" id="nombre__usuario"><br>
-                            <input type="submit" id="boton__enviarNombre" value="Enviar nombre">
+
+                        <form>
+
+                            <h2>Ingrese al sitio para ver los productos</h2><br>
+
+                            <div class="container__inputNombre">
+                                <input type="text" class="input__nombre" id="input__nombre" placeholder="Su nombre">
+                                <label for="input__email">Nombre</label>
+                            </div>
+
+                            <div class="container__inputEmail">
+                                <input type="email" class="input__email" id="input__email" placeholder="ejemplo@gmail.com" >
+                                <label for="input__email">Correo</label>
+                            </div>
+
+                            <div class="container__inputContraseña">
+                                <input type="password" class="input__contraseña" id="input__contraseña" placeholder="Contraseña">
+                                <label for="input__contraseña">Contraseña</label>
+                            </div>
+
+                            <div class="contaienr__checkboxRecuerdame">
+                                <label>
+                                    <input type="checkbox" id="checkbox__recuerdame">
+                                    Recuerdame
+                                </label>
+                            </div>
+
+                            <div class="container__botonesForm">
+
+                                <button class="boton__login" id="boton__login" type="submit">Iniciar sesión</button>
+    
+                                <button class="boton__borrarSessionStorage" id="boton__borrarSessionStorage" type="submit">Borrar mis datos de sesión</button>
+    
+                                <button class="boton__borrarLocalStorage" id="boton__borrarLocalStorage" type="submit">Borrar todos los datos</button>
+    
+                            </div>
+
                         </form>
-                        <p class="parrafo__productos">Ordenar por</p>
-                        <p class="parrafo__productos">Categorías</p>
+
+                        
+
                     </div>
                     
                     <div class="container__pagina__productos col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9" id="contenedor__productos__pagProductos">
@@ -181,6 +215,7 @@
 
     <script src="../js/productos.js"></script>
     <script src="../js/carrito.js"></script>
+    <script src="../js/login.js"></script>
 
 </body>
 </html>

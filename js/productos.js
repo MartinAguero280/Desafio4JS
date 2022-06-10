@@ -32,24 +32,26 @@ productos.push(new Producto('Lubricante Cadena Valvoline Chain Lube 400 Ml', 205
 
 
 
-for (const producto of productos) {
-    let contenedor = document.createElement('div');
-    contenedor.className = 'container__fotoproducto__infoproducto__paginaproductos';
-    contenedor.innerHTML =
-        `
-        <div class="container__foto__producto">
-            ${producto.imagen}
-        </div>
-        <div class="container__infoproducto">
-            <p class="precio__producto"> ${producto.precio} </p>
-            <p class="info__producto"> ${producto.nombre} </p>
-            <div class="container__botonAgregarAlCarrito">
-                <button class="boton__agregarAlCarrito" id="boton__agregarAlCarrito">Agregar al carrito</button>
+    
+    for (const producto of productos) {
+        let contenedor = document.createElement('div');
+        contenedor.className = 'container__fotoproducto__infoproducto__paginaproductos';
+        contenedor.innerHTML =
+            `
+            <div class="container__foto__producto">
+                ${producto.imagen}
             </div>
-        </div>
-        `;
+            <div class="container__infoproducto">
+                <p class="precio__producto">$ ${producto.precio} </p>
+                <p class="info__producto"> ${producto.nombre} </p>
+                <div class="container__botonAgregarAlCarrito">
+                    <button class="boton__agregarAlCarrito" id="boton__agregarAlCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+            `;
 
-    document.getElementById('contenedor__productos__pagProductos').appendChild(contenedor);
+        document.getElementById('contenedor__productos__pagProductos').appendChild(contenedor);
 
-}
+    }
+
 
